@@ -5,8 +5,8 @@ function handle (e) {
   try {
     const data = JSON.parse(e.data)
     const k = data['#'], v = data[':']
-    for (const f of hook[k]) f(v, k)
-    for (const f of once[k]) f(v, k)
+    if (hook[k]) for (const f of hook[k]) f(v, k)
+    if (once[k]) for (const f of once[k]) f(v, k)
     delete once[k]
   } catch {}
 }
