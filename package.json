@@ -1,0 +1,24 @@
+{
+  "name": "@field-show/agent",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/agent.js",
+  "exports": {
+    ".": "./dist/agent.js"
+  },
+  "devDependencies": {
+    "vite": "^2.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/field-show/agent.git"
+  },
+  "author": "field-show",
+  "license": "Apache-2.0"
+}
