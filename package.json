@@ -1,6 +1,6 @@
 {
   "name": "@field-show/agent",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -8,9 +8,10 @@
   "files": [
     "dist"
   ],
-  "module": "./dist/agent.js",
+  "main": "./dist/agent.umd.js",
+  "module": "./dist/agent.es.js",
   "exports": {
-    ".": "./dist/agent.js"
+    ".": "./dist/agent.es.js"
   },
   "devDependencies": {
     "vite": "^2.5.1"

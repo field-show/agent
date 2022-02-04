@@ -5,8 +5,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/index.js',
-      formats: ['es'],
-      fileName: (format) => `agent.js`
+      name: 'Agent',
+      fileName: format => `agent.${format}.js`
     }
   }
 })
